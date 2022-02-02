@@ -8,6 +8,7 @@ public class AS {
         System.out.println("Ramu");
 
         System.out.println("Ram");
+        System.out.println("fg");
 
 	}
 	public static void m1() 
