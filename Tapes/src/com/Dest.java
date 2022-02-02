@@ -4,6 +4,7 @@ public class Dest {
 
 	public static void main(String[] args) {
         System.out.println("hellow worlds");
+        System.out.println("h");
 	}
 
 }
