@@ -15,5 +15,9 @@ public class AS {
 		System.out.println("stash");
 	}
 	
+	public static void m22() 
+	{
+		System.out.println("stash2");
+	}
 
 }
