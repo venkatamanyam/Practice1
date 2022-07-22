@@ -24,7 +24,7 @@ public class CandidateDetailsController {
 	@GetMapping("/candidate")
 	public List<CandidateDetailsDomain> listAll()
 	{
-		System.out.println("hi");
+	
 		return service.listAll();
 	}
 	
