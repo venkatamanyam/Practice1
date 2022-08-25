@@ -18,10 +18,10 @@ public class Tserve {
     public String store() {
 		
     	Team t=new Team();
-		t.setName("M");
+		t.setName("RCB");
 		
 		Captain c=new Captain();
-		c.setCname("Rohit");
+		c.setCname("Viru");
 		c.setTea(t);
 		
 		t.setC(c);
@@ -34,7 +34,7 @@ public class Tserve {
     public Team getTeam()
     {
     	
-    	Team team = repo.findById(2).get();
+    	Team team = repo.findById(3).get();
     	System.out.println(team.getName());
     	return team;
     	

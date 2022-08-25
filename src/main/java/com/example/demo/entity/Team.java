@@ -24,7 +24,7 @@ public class Team implements Serializable{
 	private String name;
 	
 	
-	@OneToOne(mappedBy="tea", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+	@OneToOne(mappedBy="tea", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
 	private Captain c;
 	
 	

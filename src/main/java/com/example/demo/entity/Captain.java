@@ -27,7 +27,7 @@ public class Captain implements Serializable{
 	
 	
 	@JsonIgnore
-	@OneToOne(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
+	@OneToOne
 	@JoinColumn( name="cid")
 	private Team tea;
 	
