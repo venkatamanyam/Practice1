@@ -6,28 +6,31 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Team;
-import com.example.demo.service.Tserve;
+import com.example.demo.entity.Employee;
+
+import com.example.demo.service.Empserve;
+
 
 @RestController
-public class TeamCont {
-	
+public class Empcont {
+
 	@Autowired
-	private Tserve t;
+	private Empserve s;
 	
-	@GetMapping("/come")
+	@GetMapping("/sav")
 	public ResponseEntity<String> m1()
 	{
-		          String store = t.store();
+		          String store = s.store();
 		          
 		          return new ResponseEntity<String>(store,HttpStatus.OK );
 	}
-
-	@GetMapping(value= {"/com"}, produces="application/json")
-	public ResponseEntity<Team> m2()
+	
+	@GetMapping(value= {"/ret"}, produces="application/json")
+	public ResponseEntity<Employee> m2()
 	{
-		         Team team = t.getTeam();
+		         Employee e = s.getEmplo();
 		          
-		          return new ResponseEntity<Team>(team,HttpStatus.OK );
+		          return new ResponseEntity<Employee>(e,HttpStatus.OK );
 	}
+	
 }
