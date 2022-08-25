@@ -6,6 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
+	
+	@RequestMapping("/index")
+	   public String displa()
+	   {
+		   return "index";
+	  }
+	
 	@RequestMapping("/JobDisplay")
 	   public String display()
 	   {
